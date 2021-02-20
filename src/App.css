@@ -33,3 +33,11 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
+
+#new-quote-btn {
+  border: none;
+  border-radius: 9px;
+  background-color: rgb(59, 53, 50);
+  color: #fff;
+  padding: .7rem 1rem;
+}

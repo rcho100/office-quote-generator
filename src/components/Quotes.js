@@ -18,7 +18,7 @@ const Quotes = () => {
       </div>
 
       <div id='buttons'>
-        <button>New Quote</button>
+        <button id="new-quote-btn">New Quote</button>
       </div>
     </div>
   )
