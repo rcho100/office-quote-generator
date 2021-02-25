@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Quotes = () => {
+
+  useEffect(() => {
+    getQuote();
+  })
+
+  const getQuote = () => {
+    fetch('https://www.officeapi.dev/api/quotes/random')
+    .then(res => res.json())
+    .then(data => console.log(data))
+  }
+
   return (
     <div className='quote-box'>
 
