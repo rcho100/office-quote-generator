@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Quotes = () => {
+
+  const [quote, setQuote] = useState('');
+  const [quoteAuthor, setQuoteAuthor] = useState('');
 
   useEffect(() => {
     getQuoteData();
@@ -8,8 +11,11 @@ const Quotes = () => {
 
   const getQuoteData = () => {
     return fetch('https://www.officeapi.dev/api/quotes/random')
-      .then(res => res.json())
-      .then(data => console.log(data))
+    .then(res => res.json())
+    .then(data => {
+      setQuote(data.data.content);
+      setQuoteAuthor(`${data.data.character.firstname} ${data.data.character.lastname}`);
+    })
   }
 
   const handleClick = () => {
@@ -20,16 +26,11 @@ const Quotes = () => {
     <div className='quote-box'>
 
       <div className='text'>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
+        <p>{quote}</p>
       </div>
 
       <div className='author'>
-        <p>- John Doe</p>
+        <p>- {quoteAuthor}</p>
       </div>
 
       <div className='div-btn'>
