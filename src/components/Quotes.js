@@ -4,7 +4,7 @@ const Quotes = () => {
 
   useEffect(() => {
     getQuoteData();
-  })
+  }, [])
 
   const getQuoteData = () => {
     return fetch('https://www.officeapi.dev/api/quotes/random')
