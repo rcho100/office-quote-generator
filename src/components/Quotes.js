@@ -3,13 +3,17 @@ import React, { useEffect } from 'react';
 const Quotes = () => {
 
   useEffect(() => {
-    getQuote();
+    getQuoteData();
   })
 
-  const getQuote = () => {
-    fetch('https://www.officeapi.dev/api/quotes/random')
-    .then(res => res.json())
-    .then(data => console.log(data))
+  const getQuoteData = () => {
+    return fetch('https://www.officeapi.dev/api/quotes/random')
+      .then(res => res.json())
+      .then(data => console.log(data))
+  }
+
+  const handleClick = () => {
+    getQuoteData();
   }
 
   return (
@@ -29,7 +33,7 @@ const Quotes = () => {
       </div>
 
       <div className='div-btn'>
-        <button className="new-quote-btn">New Quote</button>
+        <button onClick={handleClick} className="new-quote-btn">New Quote</button>
       </div>
     </div>
   )
