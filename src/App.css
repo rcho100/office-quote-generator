@@ -30,6 +30,10 @@ body {
   font-weight: 400;
   font-size: 1.3rem;
   margin-top: 1rem;
+  text-align: center;
+}
+
+.div-btn {
   display: flex;
   flex-direction: row-reverse;
 }
