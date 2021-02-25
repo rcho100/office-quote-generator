@@ -12,7 +12,7 @@ body {
   background-size: cover;
 }
 
-#quote-box {
+.quote-box {
   background-color:rgba(255, 255, 255, .7);
   max-width: 900px;
   width: auto;
@@ -21,12 +21,12 @@ body {
   border-radius: 50px;
 }
 
-#text {
+.text {
   font-weight: 700;
   font-size: 1.7rem;
 }
 
-#author {
+.author {
   font-weight: 400;
   font-size: 1.3rem;
   margin-top: 1rem;
@@ -34,7 +34,7 @@ body {
   flex-direction: row-reverse;
 }
 
-#new-quote-btn {
+.new-quote-btn {
   border: none;
   border-radius: 9px;
   background-color: rgb(59, 53, 50);

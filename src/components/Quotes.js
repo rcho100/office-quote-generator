@@ -2,9 +2,9 @@ import React from 'react';
 
 const Quotes = () => {
   return (
-    <div id='quote-box'>
+    <div className='quote-box'>
 
-      <div id='text'>
+      <div className='text'>
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -13,12 +13,12 @@ const Quotes = () => {
         </p>
       </div>
 
-      <div id='author'>
+      <div className='author'>
         <p>- John Doe</p>
       </div>
 
-      <div id='buttons'>
-        <button id="new-quote-btn">New Quote</button>
+      <div className='div-btn'>
+        <button className="new-quote-btn">New Quote</button>
       </div>
     </div>
   )
