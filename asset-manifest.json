@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/office-quote-generator/static/css/main.0ad4e83d.chunk.css",
+    "main.js": "/office-quote-generator/static/js/main.de08e540.chunk.js",
+    "main.js.map": "/office-quote-generator/static/js/main.de08e540.chunk.js.map",
+    "runtime-main.js": "/office-quote-generator/static/js/runtime-main.b31304cf.js",
+    "runtime-main.js.map": "/office-quote-generator/static/js/runtime-main.b31304cf.js.map",
+    "static/js/2.618466c2.chunk.js": "/office-quote-generator/static/js/2.618466c2.chunk.js",
+    "static/js/2.618466c2.chunk.js.map": "/office-quote-generator/static/js/2.618466c2.chunk.js.map",
+    "static/js/3.1d2d6ab1.chunk.js": "/office-quote-generator/static/js/3.1d2d6ab1.chunk.js",
+    "static/js/3.1d2d6ab1.chunk.js.map": "/office-quote-generator/static/js/3.1d2d6ab1.chunk.js.map",
+    "index.html": "/office-quote-generator/index.html",
+    "static/css/main.0ad4e83d.chunk.css.map": "/office-quote-generator/static/css/main.0ad4e83d.chunk.css.map",
+    "static/js/2.618466c2.chunk.js.LICENSE.txt": "/office-quote-generator/static/js/2.618466c2.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/office-quote-generator/static/media/the-office-bg.2e3aca75.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b31304cf.js",
+    "static/js/2.618466c2.chunk.js",
+    "static/css/main.0ad4e83d.chunk.css",
+    "static/js/main.de08e540.chunk.js"
+  ]
+}
